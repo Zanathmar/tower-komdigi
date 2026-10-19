@@ -47,7 +47,7 @@ export default function SubmissionPage() {
   const selected = METHODS.find((m) => m.value === method)!;
  
   return (
-    <div className="mx-auto flex max-w-[960px] flex-col gap-6">
+    <div className="mx-auto flex max-w-240 flex-col gap-6">
       <h1 className="text-page-title">Data Submission</h1>
  
       <Card title="Submission method">
@@ -67,7 +67,7 @@ export default function SubmissionPage() {
                 <label
                   key={m.value}
                   className={cn(
-                    "flex cursor-pointer items-start gap-3 rounded-card border p-4 transition-colors duration-150 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-primary/40",
+                    "flex cursor-pointer items-start gap-3 rounded-card border p-4 transition-colors duration-150 has-focus-visible:ring-2 has-focus-visible:ring-primary/40",
                     isSelected
                       ? "border-primary bg-nav-active-bg"
                       : "border-border-soft bg-surface hover:bg-canvas"
